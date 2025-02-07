@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1738707883 source:c:\users\yisbel\onedrive\documentos\tareas\proyectos_3\3.2\3.2\3.2.c
+	<stdio.h>
+
+1738707899 source:c:\users\yisbel\onedrive\documentos\tareas\proyectos_3\3.2\3.2\main.c
+	<stdio.h>
+	<stdlib.h>
+
