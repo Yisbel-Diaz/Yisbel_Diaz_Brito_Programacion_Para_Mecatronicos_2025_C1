@@ -1,4 +1,7 @@
 # depslib dependency file v1.0
-1739493659 source:c:\users\yisbel\onedrive\documentos\tareas\calcu\main.c
+1739588560 source:c:\users\yisbel\onedrive\documentos\tareas\calcu\main.c
 	<stdio.h>
+	<math.h>
+
+1739585593 source:c:\users\yisbel\onedrive\documentos\prueba calcu.c
 
