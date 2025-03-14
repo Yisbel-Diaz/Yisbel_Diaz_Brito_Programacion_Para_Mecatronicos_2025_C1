@@ -48,7 +48,80 @@ void lectura(propiedades A[], int T)
     for (I=0; I<T; I++)
     {
         printf("\n\tIngrese datos de la propiedad %d", I+1);
-        printf("\nClave ");
+        printf("\nClave: ");
+        fflush(studin);
+        gets(A[I].calve);
+        printf("Superficie cubierta: ");
+        scanf("%f", &A[I].scu);
+        printf("Superficie terreno: ");
+        scanf("%f", &A[I].ste);
+        printf("Caracteristicas: ");
+        fflush(studin);
+        gets(A[I].car);
+        printf("\tZona: ");
+        fflush(studin);
+        gets(A[I].ubi.zona);
+        printf("\tcalle: ");
+        fflush(studin);
+        gets(A[I].ubi.calle);
+        printf("\tColonia: ");
+        fflush(studin);
+        gets(A[I].ubi.colo);
+        printf("precio: ");
+        scanf("%f", &A[I].precio);
+        printf("Disponibilidad (venta-V Renta-R): ");
+        scanf("%c", &A[I].dispo);
+    }
+}
 
+void F1(propiedades A[], int T)
+{
+    int I;
+    printf("\n\t\tListado de propiedades para venta en Miraflores");
+    for (I=0; I<T; I++)
+        if ((A[I].precio >= 450000) && (strcmp (A[I].precio <= 650000))
+    {
+        printf("\nClave de la propiedad: ");
+        puts(A[I].clave);
+        printf("\nSuperficie cubierta: %f", A[I].scu);
+        printf("\nSuperficie terreno: %f", A[I].ste);
+        printf("\nCaracteristicas: ");
+        puts(A[I].car);
+        printf("calle: ");
+        puts(A[I].ubi.calle);
+        printf("Colonia: ");
+        puts(A[I].ubi.colo);
+        printf("Precio: %.2f\n", A[I].precio);
+    }
+}
+
+void F2(propiedades A[], int T)
+{
+    int I;
+    float li, ls;
+    char zon[20];
+    printf("\n\t\tListado de propiedades para renta");
+    printf("\nIngrese zona geografica: ");
+    fflush(studin);
+    gets(zon);
+    printf("Ingrese el limite inferior del precio: ");
+    scanf("%f", &li);
+    printf("Ingrese el limite superio del precio: ");
+    scanf("%f", &ls);
+    for (I=0; I<T; I++)
+        if ((A[I].dispo == 'R') && ((strcmp (A[I].ubi.zona, zon) == 0))
+            if ((A[I].precio >= li) && (A[I].precio <= ls))
+    {
+        printf("\nClave de la propiedad: ");
+        puts(A[I].clave);
+        printf("\nSuperficie cubierta: %d", A[I].scu);
+        printf("\nSuperficie terreno: %d", A[I].ste);
+        printf("\nCaracteristicas: ");
+        puts(A[I].car);
+        printf("calle: ");
+        puts(A[I].ubi.calle);
+        printf("Colonia: ");
+        puts(A[I].ubi.colo);
+        printf("Precio: %.2f", A[I].precio);
     }
 }
