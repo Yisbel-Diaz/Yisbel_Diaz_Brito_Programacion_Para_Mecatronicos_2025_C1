@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1741886628 source:c:\users\yisbel\onedrive\documentos\tareas\tarea 8\programa de lectura imprime en pantalla la marca modelo,\programa de lectura imprime la marca de los carros\main.c
+	<stdio.h>
+	<stdlib.h>
+

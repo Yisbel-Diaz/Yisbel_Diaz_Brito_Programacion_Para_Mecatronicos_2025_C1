@@ -5,7 +5,7 @@
 void ingresarVehiculo();
 void mostrarVehiculos();
 
-int mian()
+int main()
 {
     int opcion;
     do
