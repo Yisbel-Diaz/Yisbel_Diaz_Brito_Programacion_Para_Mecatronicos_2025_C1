@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1743045059 source:c:\users\yisbel\onedrive\documentos\tareas\tarea 10\tarea 10\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
