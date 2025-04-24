@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1745422213 source:c:\users\yisbel\onedrive\documentos\tareas\tarea 12\circuito del caballo\circuito del caballo\main.c
+	<stdio.h>
+	<time.h>
+	<math.h>
+	<stdlib.h>
+
